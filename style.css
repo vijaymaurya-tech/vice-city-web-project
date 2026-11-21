@@ -1,0 +1,173 @@
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          margin: 0;
+      }
+
+      .parent {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.rockstargames.com/VI/_next/static/media/Jason_Lucia_Rooftop_landscape.0c6p5do~-8~7..jpg?akim=1&imdensity=1&imwidth=3840");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          min-height: 100vh;
+          color: rgb(237, 244, 252);
+          display: flex;
+          flex-direction: column;
+      }
+
+      nav {
+          justify-content: space-between;
+          display: flex;
+          align-items: center;
+          margin: 20px;
+
+      }
+
+
+      .anch {
+          text-decoration: none;
+          font-size: 10px;
+          font-weight: bold;
+          color: white;
+          display: inline-block;
+          transition: 0.3s;
+          cursor: pointer;
+
+
+      }
+
+      .anch:hover {
+          transform: scale(1.2);
+          color: #066ec9;
+      }
+
+      .navigation {
+          display: flex;
+          gap: 16px;
+      }
+
+      main {
+          position: absolute;
+          left: 70px;
+          top: 120px;
+          min-height: 420px;
+      }
+
+      main>b {
+          font-size: 10px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif
+      }
+
+
+
+
+      .child {
+          font-size: 60px;
+          font-weight: 900;
+          line-height: 0.9;
+          letter-spacing: -2px;
+      }
+
+      .child p {
+          margin: 0;
+          line-height: 1;
+      }
+
+      .footer {
+          margin-left: 60px;
+          margin-right: 60px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 8px;
+          margin-top: auto;
+          padding-bottom: 10px;
+
+      }
+
+      .btn {
+          font-weight: bold;
+          color: #000;
+          transition: 0.5s;
+          cursor: pointer;
+          background-color: rgb(156, 97, 163);
+          font-size: 10px;
+          padding: 6px 12px;
+          display: inline-block;
+          text-decoration: none;
+          border: none;
+
+      }
+
+      .btn:hover {
+          transform: scale(0.9);
+          background-color: rgb(220, 132, 24);
+
+      }
+
+      .container {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          position: absolute;
+          right: 1px;
+          top: 180px;
+
+
+      }
+
+      .box {
+          height: 30px;
+          width: 30px;
+          background-color: rgb(6, 6, 6);
+          position: relative;
+          right: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          font-size: 8px;
+          font-weight: bold;
+          cursor: pointer;
+          color: white;
+          text-decoration: none;
+          border: none;
+
+
+
+
+      }
+
+      .box:hover {
+          transform: scaleX(2);
+          background-color: rgb(40, 16, 158);
+
+
+      }
+
+      @media (max-width: 600px) {
+          nav {
+              flex-direction: column;
+              gap: 15px;
+          }
+
+          main {
+              left: 20px;
+              right: 20px;
+              top: 150px;
+          }
+
+          .child {
+              font-size: 40px;
+          }
+
+          .footer {
+              margin-left: 20px;
+              margin-right: 20px;
+          }
+
+          .navigation {
+              gap: 12px;
+          }
+      }
